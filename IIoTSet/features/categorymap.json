@@ -1,0 +1,922 @@
+{
+    "eth": {
+        "frame.time_delta": {},
+        "eth.src_resolved": {
+            "RaspberryPiT_fb:69:b5": 0,
+            "Intel_8e:17:69": 1,
+            "FiberhomeTel_f6:cb:a1": 2,
+            "ZhiYuanElect_43:61:0c": 3,
+            "82:76:39:c9:d3:8d": 4,
+            "9e:48:f5:d3:5a:5e": 5,
+            "None": 6
+        },
+        "eth.type": {
+            "0x0806": 0,
+            "0x0800": 1,
+            "None": 2
+        },
+        "eth.dst": {},
+        "frame.time_utc": {},
+        "frame.len": {},
+        "eth.dst.ig": {},
+        "eth.dst_resolved": {
+            "Intel_8e:17:69": 0,
+            "RaspberryPiT_fb:69:b5": 1,
+            "FiberhomeTel_f6:cb:a1": 2,
+            "Broadcast": 3,
+            "IPv4mcast_fb": 4,
+            "IPv4mcast_fc": 5,
+            "IPv4mcast_7f:ff:fa": 6,
+            "None": 7
+        },
+        "eth.src": {}
+    },
+    "eth:ethertype": {
+        "frame.time_delta": {},
+        "eth.src_resolved": {
+            "RaspberryPiT_fb:69:b5": 0,
+            "Intel_8e:17:69": 1,
+            "FiberhomeTel_f6:cb:a1": 2,
+            "ZhiYuanElect_43:61:0c": 3,
+            "82:76:39:c9:d3:8d": 4,
+            "9e:48:f5:d3:5a:5e": 5,
+            "None": 6
+        },
+        "eth.type": {
+            "0x0806": 0,
+            "0x0800": 1,
+            "None": 2
+        },
+        "eth.dst": {},
+        "frame.time_utc": {},
+        "frame.len": {},
+        "eth.dst.ig": {},
+        "eth.dst_resolved": {
+            "Intel_8e:17:69": 0,
+            "RaspberryPiT_fb:69:b5": 1,
+            "FiberhomeTel_f6:cb:a1": 2,
+            "Broadcast": 3,
+            "IPv4mcast_fb": 4,
+            "IPv4mcast_fc": 5,
+            "IPv4mcast_7f:ff:fa": 6,
+            "None": 7
+        },
+        "eth.src": {}
+    },
+    "eth:ethertype:arp": {
+        "arp.dst.hw_mac": {
+            "00:00:00:00:00:00": 0,
+            "dc:a6:32:fb:69:b5": 1,
+            "d8:f2:ca:8e:17:69": 2,
+            "48:f9:7c:f6:cb:a1": 3,
+            "None": 4
+        },
+        "arp.dst.proto_ipv4": {},
+        "arp.opcode": {
+            "1": 0,
+            "2": 1,
+            "None": 2
+        },
+        "arp.src.proto_ipv4": {},
+        "arp.isgratuitous": {},
+        "arp.src.hw_mac": {
+            "dc:a6:32:fb:69:b5": 0,
+            "d8:f2:ca:8e:17:69": 1,
+            "48:f9:7c:f6:cb:a1": 2,
+            "6c:60:eb:43:61:0c": 3,
+            "82:76:39:c9:d3:8d": 4,
+            "9e:48:f5:d3:5a:5e": 5,
+            "None": 6
+        },
+        "arp.isprobe": {},
+        "arp.isannouncement": {}
+    },
+    "eth:ethertype:ip": {
+        "ip.ttl": {},
+        "ip.dsfield.dscp": {},
+        "ip.flags.df": {},
+        "ip.dst": {},
+        "ip.src": {},
+        "ip.src_host": {},
+        "ip.dsfield.ecn": {},
+        "ip.len": {},
+        "ip.hdr_len": {},
+        "ip.dst_host": {}
+    },
+    "eth:ethertype:ip:icmp": {
+        "icmp.code": {
+            "3": 0,
+            "0": 1,
+            "123": 2,
+            "None": 3
+        },
+        "icmp.type": {
+            "3": 0,
+            "8": 1,
+            "0": 2,
+            "13": 3,
+            "14": 4,
+            "17": 5,
+            "None": 6
+        }
+    },
+    "eth:ethertype:ip:icmp:data": {
+        "icmp.data_time_relative": {},
+        "data.data": {},
+        "data.len": {}
+    },
+    "eth:ethertype:ip:icmp:ip": {
+        "udp.checksum.status": {
+            "2": 0,
+            "3": 1,
+            "None": 2
+        },
+        "udp.port": {},
+        "udp.payload": {},
+        "udp.srcport": {},
+        "udp.length": {},
+        "udp.dstport": {}
+    },
+    "eth:ethertype:ip:icmp:ip:udp": {},
+    "eth:ethertype:ip:icmp:ip:udp:data": {
+        "data.data": {},
+        "data.len": {}
+    },
+    "eth:ethertype:ip:icmp:ip:udp:dns": {
+        "dns.qry.type": {
+            "12": 0,
+            "1": 1,
+            "None": 2,
+            "28": 3,
+            "255": 4
+        },
+        "dns.flags.checkdisable": {},
+        "dns.flags.recavail": {},
+        "dns.flags.recdesired": {},
+        "dns.qry.class": {
+            "0x0001": 0,
+            "None": 1
+        },
+        "dns.count.queries": {},
+        "dns.count.add_rr": {},
+        "dns.count.labels": {},
+        "dns.flags.rcode": {
+            "None": 0,
+            "0": 1,
+            "3": 2,
+            "5": 3
+        },
+        "dns.count.answers": {},
+        "dns.flags.authenticated": {},
+        "dns.qry.name": {
+            "_googlecast._tcp.local": 0,
+            "_ipp._tcp.local": 1,
+            "raspberrypi.local": 2,
+            "None": 3,
+            "DESKTOP-UHF0SF2.local": 4,
+            "101.217.254.169.in-addr.arpa": 5,
+            "wpad.local": 6,
+            "_scanner._tcp.local": 7,
+            "_ipps._tcp.local": 8,
+            "null-null.local": 9,
+            "2.debian.pool.ntp.org": 10,
+            "3.debian.pool.ntp.org": 11,
+            "0.debian.pool.ntp.org": 12,
+            "1.debian.pool.ntp.org": 13,
+            "accounts.google.com": 14,
+            "update.googleapis.com": 15,
+            "content-autofill.googleapis.com": 16,
+            "safebrowsing.googleapis.com": 17,
+            "cdn.jsdelivr.net": 18,
+            "www.securityfocus.com": 19,
+            "46.5.168.192.in-addr.arpa": 20,
+            "1.5.8.6.a.a.f.9.f.6.b.8.c.d.2.e.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 21,
+            "5.a.b.9.4.9.0.5.9.5.f.5.7.6.0.b.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 22,
+            "30.4.168.192.in-addr.arpa": 23,
+            "update-check.realvnc.com": 24,
+            "DESKTOP-UHF0SF2": 25,
+            "wpad": 26,
+            "raspberrypi": 27
+        },
+        "dns.flags.z": {},
+        "dns.count.auth_rr": {},
+        "dns.flags.response": {},
+        "dns.flags.authoritative": {}
+    },
+    "eth:ethertype:ip:igmp": {},
+    "eth:ethertype:ip:igmp:igmp": {},
+    "eth:ethertype:ip:tcp": {
+        "tcp.flags.fin": {},
+        "tcp.payload": {},
+        "tcp.flags.reset": {},
+        "tcp.flags.push": {},
+        "tcp.len": {},
+        "tcp.flags.ack": {},
+        "tcp.completeness.syn-ack": {},
+        "tcp.completeness.ack": {},
+        "tcp.completeness.fin": {},
+        "tcp.analysis.push_bytes_sent": {},
+        "tcp.port": {},
+        "tcp.completeness.data": {},
+        "tcp.flags.syn": {},
+        "tcp.srcport": {},
+        "tcp.dstport": {},
+        "tcp.time_delta": {},
+        "tcp.window_size_value": {},
+        "tcp.completeness.syn": {},
+        "tcp.completeness.rst": {},
+        "tcp.analysis.bytes_in_flight": {},
+        "tcp.hdr_len": {}
+    },
+    "eth:ethertype:ip:tcp:data": {
+        "data.data": {},
+        "data.len": {}
+    },
+    "eth:ethertype:ip:tcp:http": {
+        "http.chat": {},
+        "http.connection": {
+            "Keep-Alive": 0,
+            "close": 1,
+            "None": 2
+        },
+        "http.content_length": {}
+    },
+    "eth:ethertype:ip:tcp:http:data": {
+        "http.request.version": {
+            "None": 0,
+            "HTTP/1.0": 1,
+            "HTTP/1.1": 2,
+            "By Dr HTTP/1.1": 3,
+            "-al&ABSOLUTE_PATH_STUDIP=http://cirt.net/rfiinc.txt?? HTTP/1.1": 4,
+            "-al&_PHPLIB[libdir]=http://cirt.net/rfiinc.txt?? HTTP/1.1": 5,
+            "-a HTTP/1.1": 6,
+            "UNION ALL SELECT FileToClob('/etc/passwd','server')::html,0 FROM sysusers WHERE username=USER --/.html HTTP/1.1": 7,
+            "UNION ALL SELECT FileToClob('/etc/passwd','server')::html,0 FROM sysusers WHERE username = USER --/.html HTTP/1.1": 8,
+            "> HTTP/1.1": 9,
+            "script>alert(1)/script><\\\" HTTP/1.1": 10,
+            "Src=javascript:alert('Vulnerable')><Img Src=\\\" HTTP/1.1": 11,
+            "name=a><input name=i value=XSS>&lt;script>alert('Vulnerable')</script> HTTP/1.1": 12,
+            "/etc/passwd|?data=Download HTTP/1.1": 13
+        },
+        "tcp.option.len.invalid": {},
+        "http.request.method": {
+            "None": 0,
+            "TRACE": 1,
+            "GET": 2,
+            "POST": 3,
+            "OPTIONS": 4,
+            "PROPFIND": 5,
+            "SEARCH": 6,
+            "PUT": 7,
+            "M-SEARCH": 8
+        },
+        "http.response_for.uri": {},
+        "http.time": {},
+        "http.response.version": {
+            "HTTP/1.1": 0,
+            "None": 1
+        },
+        "http.request.uri": {},
+        "data.data": {},
+        "http.response.line": {
+            "Content-Type: text/html; charset=UTF-8\r\n": 0,
+            "None": 1,
+            "Connection: Keep-Alive\r\n": 2,
+            "Content-Type: text/markdown\r\n": 3,
+            "Content-Type: image/vnd.microsoft.icon\r\n": 4
+        },
+        "http.response.code": {
+            "302": 0,
+            "None": 1,
+            "200": 2
+        },
+        "http.file_data": {},
+        "tcp.segment.count": {},
+        "http.request.full_uri": {},
+        "data.len": {},
+        "http.user_agent": {},
+        "http.response.phrase": {
+            "Found": 0,
+            "None": 1,
+            "OK": 2
+        },
+        "http.request.line": {}
+    },
+    "eth:ethertype:ip:tcp:http:media": {
+        "http.response_for.uri": {},
+        "http.time": {},
+        "http.response.version": {
+            "HTTP/1.1": 0,
+            "None": 1
+        },
+        "http.response.line": {
+            "Content-Type: text/html; charset=UTF-8\r\n": 0,
+            "None": 1,
+            "Connection: Keep-Alive\r\n": 2,
+            "Content-Type: text/markdown\r\n": 3,
+            "Content-Type: image/vnd.microsoft.icon\r\n": 4
+        },
+        "http.response.code": {
+            "302": 0,
+            "None": 1,
+            "200": 2
+        },
+        "http.file_data": {},
+        "tcp.segment.count": {},
+        "http.response.phrase": {
+            "Found": 0,
+            "None": 1,
+            "OK": 2
+        },
+        "http.content_type": {
+            "text/html; charset=UTF-8": 0,
+            "None": 1,
+            "%{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('Nikto-Added-CVE-2017-5638',7*6)}.multipart/form-data": 2,
+            "application/x-www-form-urlencoded": 3,
+            "text/markdown": 4,
+            "image/vnd.microsoft.icon": 5
+        }
+    },
+    "eth:ethertype:ip:tcp:http:urlencoded-form": {
+        "http.request.version": {
+            "None": 0,
+            "HTTP/1.0": 1,
+            "HTTP/1.1": 2,
+            "By Dr HTTP/1.1": 3,
+            "-al&ABSOLUTE_PATH_STUDIP=http://cirt.net/rfiinc.txt?? HTTP/1.1": 4,
+            "-al&_PHPLIB[libdir]=http://cirt.net/rfiinc.txt?? HTTP/1.1": 5,
+            "-a HTTP/1.1": 6,
+            "UNION ALL SELECT FileToClob('/etc/passwd','server')::html,0 FROM sysusers WHERE username=USER --/.html HTTP/1.1": 7,
+            "UNION ALL SELECT FileToClob('/etc/passwd','server')::html,0 FROM sysusers WHERE username = USER --/.html HTTP/1.1": 8,
+            "> HTTP/1.1": 9,
+            "script>alert(1)/script><\\\" HTTP/1.1": 10,
+            "Src=javascript:alert('Vulnerable')><Img Src=\\\" HTTP/1.1": 11,
+            "name=a><input name=i value=XSS>&lt;script>alert('Vulnerable')</script> HTTP/1.1": 12,
+            "/etc/passwd|?data=Download HTTP/1.1": 13
+        },
+        "http.request.method": {
+            "None": 0,
+            "TRACE": 1,
+            "GET": 2,
+            "POST": 3,
+            "OPTIONS": 4,
+            "PROPFIND": 5,
+            "SEARCH": 6,
+            "PUT": 7,
+            "M-SEARCH": 8
+        },
+        "http.request.uri.path": {},
+        "http.request.uri.path.segment": {},
+        "http.request.uri": {},
+        "http.cookie": {},
+        "http.file_data": {},
+        "tcp.segment.count": {},
+        "http.request.uri.query": {},
+        "http.request.full_uri": {},
+        "http.request.line": {},
+        "http.user_agent": {},
+        "http.content_type": {
+            "text/html; charset=UTF-8": 0,
+            "None": 1,
+            "%{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('Nikto-Added-CVE-2017-5638',7*6)}.multipart/form-data": 2,
+            "application/x-www-form-urlencoded": 3,
+            "text/markdown": 4,
+            "image/vnd.microsoft.icon": 5
+        }
+    },
+    "eth:ethertype:ip:tcp:mbtcp": {
+        "tcp.pdu.size": {}
+    },
+    "eth:ethertype:ip:tcp:mbtcp:modbus": {},
+    "eth:ethertype:ip:tcp:mqtt": {
+        "mqtt.conflag.passwd": {},
+        "mqtt.dupflag": {},
+        "mqtt.qos": {},
+        "mqtt.conack.flags.sp": {},
+        "mqtt.conflag.reserved": {},
+        "tcp.pdu.size": {},
+        "mqtt.conflag.uname": {},
+        "mqtt.conack.flags.reserved": {},
+        "mqtt.conflag.qos": {},
+        "mqtt.kalive": {},
+        "mqtt.topic": {
+            "None": 0,
+            "IR_Receiver": 1,
+            "Water_Level": 2,
+            "Distance": 3,
+            "Heart_Rate": 4,
+            "Sound_Sensor": 5,
+            "Soil_Moisture": 6,
+            "phValue": 7,
+            "Flame_Sensor": 8,
+            "Temperature_and_Humidity": 9
+        },
+        "mqtt.len": {},
+        "mqtt.msg": {},
+        "mqtt.connack.reason_code": {},
+        "mqtt.retain": {},
+        "mqtt.conflag.cleansess": {},
+        "mqtt.conack.val": {},
+        "mqtt.conflag.retain": {},
+        "mqtt.conflag.willflag": {},
+        "mqtt.msgtype": {
+            "1": 0,
+            "2": 1,
+            "3": 2,
+            "14": 3,
+            "None": 4
+        }
+    },
+    "eth:ethertype:ip:tcp:smrse": {},
+    "eth:ethertype:ip:tcp:tls": {
+        "tls.handshake.extensions.psk.identity.identity": {
+            "01:c6:05:df:6d:eb:8c:4b:fd:22:33:97:0c:6d:53:6e:b8:ea:67:a9:e9:d6:5c:e3:28:53:fe:27:da:6a:b8:25:d0:fe:84:28:8b:3a:7e:45:fd:71:b4:b0:76:f9:ea:1b:8f:86:de:7b:e3:52:7d:e0:5d:69:f4:99:64:db:c1:94:f3:80:6f:9a:0c:0c:f8:54:fd:fb:3f:19:4e:3f:d5:e1:16:19:d3:bd:11:1b:c3:07:45:ea:96:5d:18:13:44:44:5f:0b:0c:2f:79:6e:fa:c4:3d:6b:6b:61:f1:da:10:f6:6c:90:9e:c4:5e:ea:ba:a3:4b:68:d6:76:c4:18:f5:e0:fd:4f:df:6a:1e:23:ce:fc:58:71:31:ae:81:1a:d3:3c:ef:7e:3a:1e:73:03:61:fc:b7:4f:d7:fc:b5:8b:c2:09:52:b7:d9:e9:41:c1:4a:44:02:0e:c0:bd:fb:13:ba:21:20:80:4e:63:17:a3:81:95:25:7e:d1:a0:db:91:df:23:66:ee:57:d0:f8:04:ba:e9:db:23:90:6e:27:5c:f7:17:11:c0:8b:91:36:42:e3:ef:72:c3:3b:ba:24:96:5f:28:a7:d1:3e:c7:41:c7:11:f8": 0,
+            "None": 1,
+            "01:10:60:ee:4e:ac:ad:1e:37:9d:1c:71:fc:29:2b:a7:d6:11:8e:fe:f5:e7:d8:a8:18:d1:ce:47:c7:03:5b:3b:3f:11:7a:41:d5:3d:78:51:08:9c:f9:57:b1:b1:8c:10:ec:6c:78:0c:c6:51:21:c0:02:cb:8e:49:e0:4b:c3:1b:fa:2f:23:c3:15:fd:82:3e:5a:1d:94:21:c0:c9:f4:24:c0:a6:43:4d:fa:9f:65:84:30:65:7a:59:5b:ac:ec:5a:34:74:35:b7:7b:ac:dc:96:c5:ab:ab:73:bc:4a:e3:99:24:38:97:ea:00:f3:ef:13:ff:95:d8:7f:5b:19:dc:42:12:2a:50:62:d3:d4:fe:d9:ee:76:a2:72:90:97:1d:7e:9b:00:5f:6e:38:6d:1b:16:d8:a2:6f:ef:12:04:4d:ba:34:5c:26:1e:8f:72:43:f5:02:5f:09:50:2c:eb:02:a3:ae:08:4f:da:e9:9a:97:b5:c1:78:dc:9a:79:9a:b4:15:fb:fe:1c:55:d2:3c:30:48:63:fb:d5:a7:4f:46:fa:6d:24:3f:b7:04:8e:ab:53:3e:5d:e4:58:37:21:e8:4b:17:ce:f6:e2:38:fe:80:a6:9c": 2
+        },
+        "tls.handshake.ja4_r": {
+            "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0015,0017,001b,0023,002b,002d,0033,4469,ff01_0403,0804,0401,0503,0805,0501,0806,0601": 0,
+            "None": 1,
+            "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,0029,002b,002d,0033,4469,ff01_0403,0804,0401,0503,0805,0501,0806,0601": 2,
+            "t12d330600_000a,002f,003c,003d,009c,009d,00ff,c003,c004,c008,c009,c023,c024,c025,c026,c027,c028,c029,c02a,c02b,c02c,c02d,c02e,c02f,c030,c031,c032,c09c,c09d,c0ac,c0ad,cca8,cca9_000a,000b,000d,0016,0017_0603,0601,0503,0501,0403,0401,0303,0301,0203,0201": 3
+        },
+        "tls.app_data": {},
+        "tls.handshake.extensions_ec_point_format": {},
+        "tcp.segment.count": {},
+        "tls.handshake.comp_method": {
+            "0": 0,
+            "None": 1
+        },
+        "tls.record.opaque_type": {},
+        "tls.handshake.length": {},
+        "tls.handshake.extensions_server_name": {
+            "accounts.google.com": 0,
+            "None": 1,
+            "update.googleapis.com": 2,
+            "content-autofill.googleapis.com": 3,
+            "safebrowsing.googleapis.com": 4,
+            "cdn.jsdelivr.net": 5,
+            "update-check.realvnc.com": 6
+        },
+        "tls.handshake.extensions.psk.binders": {
+            "": 0,
+            "None": 1
+        },
+        "tls.extension.psk_ke_mode": {
+            "1": 0,
+            "None": 1
+        },
+        "tls.handshake.ja3_full": {
+            "771,4867-4865-4866-52393-52392-49195-49199-49196-49200-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27-17513-21,29-23-24,0": 0,
+            "None": 1,
+            "771,4867-4865-4866-52393-52392-49195-49199-49196-49200-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27-17513-41,29-23-24,0": 2,
+            "771,49195-49199-52393-52392-49196-49200-49197-49201-49198-49202-156-157-49324-49308-49325-49309-49187-49191-49188-49192-49189-49193-49190-49194-60-61-49161-49156-47-49160-49155-10-255,0-13-10-11-22-23,25-24-23-21,0": 3
+        },
+        "tls.handshake.type": {},
+        "tls.handshake.ciphersuite": {
+            "0x0035": 0,
+            "None": 1,
+            "0x00ff": 2,
+            "0x009c": 3
+        },
+        "tls.handshake.extensions_supported_group": {
+            "0x0018": 0,
+            "None": 1,
+            "0x0015": 2
+        },
+        "tls.record.content_type": {
+            "22": 0,
+            "20": 1,
+            "None": 2,
+            "23": 3,
+            "21": 4
+        },
+        "tls.handshake.extensions_key_share_group": {},
+        "tls.app_data_proto": {
+            "None": 0,
+            "Hypertext Transfer Protocol": 1
+        },
+        "tls.compress_certificate.algorithm": {
+            "2": 0,
+            "None": 1
+        },
+        "tls.handshake.extensions_status_request_type": {
+            "1": 0,
+            "None": 1
+        },
+        "tls.handshake.extensions_alps_alpn_str": {},
+        "tls.handshake.sig_hash_hash": {
+            "6": 0,
+            "None": 1,
+            "2": 2
+        },
+        "tls.handshake.extension.data": {},
+        "tls.handshake.ja3s_full": {
+            "None": 0,
+            "771,156,0-65281": 1
+        },
+        "tls.handshake.extension.type": {
+            "21": 0,
+            "None": 1,
+            "41": 2,
+            "23": 3,
+            "65281": 4
+        },
+        "tls.handshake.epms": {
+            "None": 0,
+            "78:ae:89:f9:e2:8e:21:eb:d8:e6:b2:e8:7d:91:d1:d0:a5:a0:13:12:c4:11:cc:2d:44:ad:29:1e:2f:3d:1e:54:eb:f8:89:13:0a:8e:fb:91:99:ee:f3:2f:10:13:5b:62:3b:de:6b:13:d5:4c:01:e2:30:3e:5e:0d:63:7d:8b:0f:d5:b1:24:1a:4a:07:82:1b:56:34:18:f5:38:36:64:99:1d:50:50:dd:7f:62:d9:e3:b0:80:23:da:6f:12:fe:21:21:19:5e:0f:cf:42:e3:16:b1:88:eb:1b:43:9e:e1:b4:84:e2:9f:1b:b9:dd:3d:c1:3d:29:1b:b4:4b:6d:fa:94:cc:3a:33:31:10:df:82:66:6e:0d:0a:a1:dd:ae:87:fb:b7:af:8c:c4:e9:71:06:2e:5c:54:0b:5d:14:3d:50:cf:b7:1e:d5:9b:60:2c:56:ee:f1:cc:6d:fc:f7:ef:3e:3a:2f:dc:82:37:b1:39:eb:99:32:78:53:09:e8:dc:2a:e4:e1:7d:44:dd:ea:60:44:d9:71:13:6c:49:51:4b:62:ed:19:f7:74:c2:3a:77:d3:50:42:51:6a:e1:21:4d:ee:e9:1c:4b:b6:2d:22:30:ba:0b:ba:38:5e:24:87:73:8f:5e:ea:5f:e1:72:35:db:c2:80:8a:b6:50:ea:92:bc:cf:5e": 1,
+            "16:a5:c0:92:aa:b0:f2:e5:a6:82:59:f9:b3:32:4b:db:39:81:45:cf:24:84:bb:1d:93:a9:a7:bc:f3:45:cb:3a:2e:be:33:2d:be:1b:3a:f4:b4:5c:05:a6:d0:f6:03:c4:88:d2:cf:33:84:52:6e:41:cc:ca:7d:e8:6d:1c:4d:fc:a9:f0:a1:e7:07:d7:5a:b8:f2:6f:10:6b:9b:db:b2:06:ce:07:31:c2:45:4e:55:f7:40:ef:ae:8e:f5:f5:14:fb:08:43:28:bd:61:6d:1b:c3:de:c3:44:fe:21:14:28:07:02:0d:d9:70:24:b4:66:38:5e:19:5f:80:38:5c:f3:61:ff:ed:c0:34:d5:2b:ba:15:3a:dc:e3:c5:9d:90:21:d0:ce:e7:92:0d:e0:5d:00:bb:66:36:7c:0d:13:45:73:c1:32:76:0b:59:fb:1e:5c:ca:65:c8:69:75:f4:4c:c3:30:e7:a3:c2:0d:f1:a5:05:7f:d1:d7:8c:15:30:c4:ab:97:a6:a7:31:1d:86:72:51:68:f6:54:2f:74:af:3e:3f:8c:a9:2f:62:af:ed:f5:d0:7b:b4:c6:0c:b9:87:c1:5d:ee:51:7b:23:ec:f9:bd:dc:65:c3:15:58:b6:d7:cb:e8:02:07:a8:cf:7b:3d:c3:e0:c4:7f:c8:44:9e:11:b0:88:ba": 2
+        },
+        "tls.record.length": {},
+        "tls.alert_message": {},
+        "tls.handshake.version": {},
+        "tls.change_cipher_spec": {},
+        "tls.record.version": {},
+        "tls.handshake.extensions_status_request_exts_len": {},
+        "tls.handshake.sig_hash_alg": {
+            "0x0601": 0,
+            "None": 1,
+            "0x0201": 2
+        },
+        "tls.handshake.extension.len": {},
+        "tls.handshake.extensions_server_name_type": {},
+        "tls.handshake.extensions_status_request_responder_ids_len": {},
+        "tls.handshake.extensions_alpn_str": {}
+    },
+    "eth:ethertype:ip:tcp:vnc": {
+        "vnc": {}
+    },
+    "eth:ethertype:ip:udp": {
+        "udp.checksum.status": {
+            "2": 0,
+            "3": 1,
+            "None": 2
+        },
+        "udp.port": {},
+        "udp.srcport": {},
+        "udp.length": {},
+        "udp.dstport": {}
+    },
+    "eth:ethertype:ip:udp:bjnp": {
+        "udp.time_delta": {},
+        "udp.payload": {}
+    },
+    "eth:ethertype:ip:udp:data": {
+        "udp.time_delta": {},
+        "udp.payload": {},
+        "data.data": {},
+        "data.len": {}
+    },
+    "eth:ethertype:ip:udp:dhcp": {
+        "udp.time_delta": {},
+        "dhcp.hw.mac_addr": {
+            "6c:60:eb:43:61:0c": 0,
+            "d8:f2:ca:8e:17:69": 1,
+            "82:76:39:c9:d3:8d": 2,
+            "9e:48:f5:d3:5a:5e": 3,
+            "None": 4
+        },
+        "dhcp.type": {
+            "1": 0,
+            "2": 1,
+            "None": 2
+        },
+        "dhcp.ip.your": {
+            "0.0.0.0": 0,
+            "192.168.0.152": 1,
+            "None": 2
+        },
+        "udp.payload": {},
+        "dhcp.ip.server": {
+            "0.0.0.0": 0,
+            "192.168.0.1": 1,
+            "None": 2
+        },
+        "dhcp.secs": {},
+        "dhcp.flags.bc": {}
+    },
+    "eth:ethertype:ip:udp:dns": {
+        "dns.soa.expire_limit": {},
+        "dns.soa.minimum_ttl": {},
+        "dns.qry.type": {
+            "12": 0,
+            "1": 1,
+            "None": 2,
+            "28": 3,
+            "255": 4
+        },
+        "dns.ptr.domain_name": {},
+        "udp.time_delta": {},
+        "dns.flags.checkdisable": {},
+        "dns.flags.recavail": {},
+        "dns.flags.recdesired": {},
+        "dns.retransmit_request": {},
+        "dns.qry.class": {
+            "0x0001": 0,
+            "None": 1
+        },
+        "dns.count.queries": {},
+        "dns.count.add_rr": {},
+        "dns.soa.mname": {},
+        "dns.count.labels": {},
+        "dns.resp.name": {},
+        "dns.retransmission": {},
+        "dns.soa.rname": {},
+        "dns.flags.rcode": {
+            "None": 0,
+            "0": 1,
+            "3": 2,
+            "5": 3
+        },
+        "dns.count.answers": {},
+        "dns.soa.refresh_interval": {},
+        "dns.flags.authenticated": {},
+        "dns.cname": {},
+        "dns.soa.retry_interval": {},
+        "udp.payload": {},
+        "dns.qry.name": {
+            "_googlecast._tcp.local": 0,
+            "_ipp._tcp.local": 1,
+            "raspberrypi.local": 2,
+            "None": 3,
+            "DESKTOP-UHF0SF2.local": 4,
+            "101.217.254.169.in-addr.arpa": 5,
+            "wpad.local": 6,
+            "_scanner._tcp.local": 7,
+            "_ipps._tcp.local": 8,
+            "null-null.local": 9,
+            "2.debian.pool.ntp.org": 10,
+            "3.debian.pool.ntp.org": 11,
+            "0.debian.pool.ntp.org": 12,
+            "1.debian.pool.ntp.org": 13,
+            "accounts.google.com": 14,
+            "update.googleapis.com": 15,
+            "content-autofill.googleapis.com": 16,
+            "safebrowsing.googleapis.com": 17,
+            "cdn.jsdelivr.net": 18,
+            "www.securityfocus.com": 19,
+            "46.5.168.192.in-addr.arpa": 20,
+            "1.5.8.6.a.a.f.9.f.6.b.8.c.d.2.e.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 21,
+            "5.a.b.9.4.9.0.5.9.5.f.5.7.6.0.b.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 22,
+            "30.4.168.192.in-addr.arpa": 23,
+            "update-check.realvnc.com": 24,
+            "DESKTOP-UHF0SF2": 25,
+            "wpad": 26,
+            "raspberrypi": 27
+        },
+        "dns.resp.type": {
+            "None": 0,
+            "1": 1,
+            "28": 2,
+            "6": 3,
+            "12": 4
+        },
+        "dns.flags.z": {},
+        "dns.resp.class": {
+            "None": 0,
+            "0x0001": 1
+        },
+        "dns.count.auth_rr": {},
+        "dns.a": {},
+        "dns.resp.ttl": {},
+        "dns.flags.response": {},
+        "dns.flags.authoritative": {}
+    },
+    "eth:ethertype:ip:udp:llmnr": {
+        "dns.soa.expire_limit": {},
+        "dns.soa.minimum_ttl": {},
+        "dns.qry.type": {
+            "12": 0,
+            "1": 1,
+            "None": 2,
+            "28": 3,
+            "255": 4
+        },
+        "udp.time_delta": {},
+        "dns.retransmit_request": {},
+        "dns.qry.class": {
+            "0x0001": 0,
+            "None": 1
+        },
+        "dns.count.queries": {},
+        "dns.count.add_rr": {},
+        "dns.soa.mname": {},
+        "dns.count.labels": {},
+        "dns.resp.name": {},
+        "dns.retransmission": {},
+        "dns.soa.rname": {},
+        "dns.flags.rcode": {
+            "None": 0,
+            "0": 1,
+            "3": 2,
+            "5": 3
+        },
+        "dns.count.answers": {},
+        "dns.soa.refresh_interval": {},
+        "dns.soa.retry_interval": {},
+        "udp.payload": {},
+        "dns.qry.name": {
+            "_googlecast._tcp.local": 0,
+            "_ipp._tcp.local": 1,
+            "raspberrypi.local": 2,
+            "None": 3,
+            "DESKTOP-UHF0SF2.local": 4,
+            "101.217.254.169.in-addr.arpa": 5,
+            "wpad.local": 6,
+            "_scanner._tcp.local": 7,
+            "_ipps._tcp.local": 8,
+            "null-null.local": 9,
+            "2.debian.pool.ntp.org": 10,
+            "3.debian.pool.ntp.org": 11,
+            "0.debian.pool.ntp.org": 12,
+            "1.debian.pool.ntp.org": 13,
+            "accounts.google.com": 14,
+            "update.googleapis.com": 15,
+            "content-autofill.googleapis.com": 16,
+            "safebrowsing.googleapis.com": 17,
+            "cdn.jsdelivr.net": 18,
+            "www.securityfocus.com": 19,
+            "46.5.168.192.in-addr.arpa": 20,
+            "1.5.8.6.a.a.f.9.f.6.b.8.c.d.2.e.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 21,
+            "5.a.b.9.4.9.0.5.9.5.f.5.7.6.0.b.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 22,
+            "30.4.168.192.in-addr.arpa": 23,
+            "update-check.realvnc.com": 24,
+            "DESKTOP-UHF0SF2": 25,
+            "wpad": 26,
+            "raspberrypi": 27
+        },
+        "dns.resp.type": {
+            "None": 0,
+            "1": 1,
+            "28": 2,
+            "6": 3,
+            "12": 4
+        },
+        "dns.resp.class": {
+            "None": 0,
+            "0x0001": 1
+        },
+        "dns.count.auth_rr": {},
+        "dns.a": {},
+        "dns.resp.ttl": {},
+        "dns.flags.response": {}
+    },
+    "eth:ethertype:ip:udp:mdns": {
+        "dns.qry.type": {
+            "12": 0,
+            "1": 1,
+            "None": 2,
+            "28": 3,
+            "255": 4
+        },
+        "udp.time_delta": {},
+        "dns.flags.checkdisable": {},
+        "dns.resp.cache_flush": {},
+        "dns.flags.recavail": {},
+        "dns.flags.recdesired": {},
+        "dns.retransmit_request": {},
+        "dns.qry.class": {
+            "0x0001": 0,
+            "None": 1
+        },
+        "dns.count.queries": {},
+        "dns.count.add_rr": {},
+        "dns.count.labels": {},
+        "dns.resp.name": {},
+        "dns.retransmission": {},
+        "dns.flags.rcode": {
+            "None": 0,
+            "0": 1,
+            "3": 2,
+            "5": 3
+        },
+        "dns.count.answers": {},
+        "dns.flags.authenticated": {},
+        "dns.qry.qu": {},
+        "udp.payload": {},
+        "dns.qry.name": {
+            "_googlecast._tcp.local": 0,
+            "_ipp._tcp.local": 1,
+            "raspberrypi.local": 2,
+            "None": 3,
+            "DESKTOP-UHF0SF2.local": 4,
+            "101.217.254.169.in-addr.arpa": 5,
+            "wpad.local": 6,
+            "_scanner._tcp.local": 7,
+            "_ipps._tcp.local": 8,
+            "null-null.local": 9,
+            "2.debian.pool.ntp.org": 10,
+            "3.debian.pool.ntp.org": 11,
+            "0.debian.pool.ntp.org": 12,
+            "1.debian.pool.ntp.org": 13,
+            "accounts.google.com": 14,
+            "update.googleapis.com": 15,
+            "content-autofill.googleapis.com": 16,
+            "safebrowsing.googleapis.com": 17,
+            "cdn.jsdelivr.net": 18,
+            "www.securityfocus.com": 19,
+            "46.5.168.192.in-addr.arpa": 20,
+            "1.5.8.6.a.a.f.9.f.6.b.8.c.d.2.e.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 21,
+            "5.a.b.9.4.9.0.5.9.5.f.5.7.6.0.b.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa": 22,
+            "30.4.168.192.in-addr.arpa": 23,
+            "update-check.realvnc.com": 24,
+            "DESKTOP-UHF0SF2": 25,
+            "wpad": 26,
+            "raspberrypi": 27
+        },
+        "dns.resp.type": {
+            "None": 0,
+            "1": 1,
+            "28": 2,
+            "6": 3,
+            "12": 4
+        },
+        "dns.flags.z": {},
+        "dns.resp.class": {
+            "None": 0,
+            "0x0001": 1
+        },
+        "dns.count.auth_rr": {},
+        "dns.a": {},
+        "dns.resp.ttl": {},
+        "dns.flags.response": {},
+        "dns.flags.authoritative": {}
+    },
+    "eth:ethertype:ip:udp:nbdgm": {
+        "udp.time_delta": {},
+        "udp.payload": {}
+    },
+    "eth:ethertype:ip:udp:nbdgm:smb": {},
+    "eth:ethertype:ip:udp:nbdgm:smb:browser": {},
+    "eth:ethertype:ip:udp:nbns": {
+        "udp.time_delta": {},
+        "nbns.addr": {},
+        "nbns.count.add_rr": {},
+        "udp.payload": {},
+        "nbns.name": {},
+        "nbns.flags.opcode": {
+            "0": 0,
+            "5": 1,
+            "None": 2
+        },
+        "nbns.data_length": {},
+        "nbns.flags.recdesired": {}
+    },
+    "eth:ethertype:ip:udp:ntp": {
+        "ntp.stratum": {},
+        "udp.time_delta": {},
+        "ntp.xmt": {},
+        "ntp.rec": {},
+        "ntp.org": {},
+        "ntp.precision": {},
+        "ntp.flags.mode": {
+            "3": 0,
+            "4": 1,
+            "None": 2
+        },
+        "udp.payload": {},
+        "ntp.rootdelay": {},
+        "ntp.reftime": {},
+        "ntp.rootdispersion": {}
+    },
+    "eth:ethertype:ip:udp:snmp": {
+        "udp.time_delta": {},
+        "udp.payload": {}
+    },
+    "eth:ethertype:ip:udp:ssdp": {
+        "http.request.version": {
+            "None": 0,
+            "HTTP/1.0": 1,
+            "HTTP/1.1": 2,
+            "By Dr HTTP/1.1": 3,
+            "-al&ABSOLUTE_PATH_STUDIP=http://cirt.net/rfiinc.txt?? HTTP/1.1": 4,
+            "-al&_PHPLIB[libdir]=http://cirt.net/rfiinc.txt?? HTTP/1.1": 5,
+            "-a HTTP/1.1": 6,
+            "UNION ALL SELECT FileToClob('/etc/passwd','server')::html,0 FROM sysusers WHERE username=USER --/.html HTTP/1.1": 7,
+            "UNION ALL SELECT FileToClob('/etc/passwd','server')::html,0 FROM sysusers WHERE username = USER --/.html HTTP/1.1": 8,
+            "> HTTP/1.1": 9,
+            "script>alert(1)/script><\\\" HTTP/1.1": 10,
+            "Src=javascript:alert('Vulnerable')><Img Src=\\\" HTTP/1.1": 11,
+            "name=a><input name=i value=XSS>&lt;script>alert('Vulnerable')</script> HTTP/1.1": 12,
+            "/etc/passwd|?data=Download HTTP/1.1": 13
+        },
+        "udp.time_delta": {},
+        "http.request.method": {
+            "None": 0,
+            "TRACE": 1,
+            "GET": 2,
+            "POST": 3,
+            "OPTIONS": 4,
+            "PROPFIND": 5,
+            "SEARCH": 6,
+            "PUT": 7,
+            "M-SEARCH": 8
+        },
+        "http.chat": {},
+        "http.request.uri": {},
+        "udp.payload": {},
+        "http.request.full_uri": {},
+        "http.request.line": {},
+        "http.user_agent": {}
+    }
+}
