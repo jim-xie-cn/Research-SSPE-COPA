@@ -1,6 +1,7 @@
 import os,json,sys,logging
 sys.path.append("./share")
 sys.path.append("./common")
+sys.path.append("./ml")
 import pandas as pd
 import json
 from tqdm import tqdm
@@ -8,15 +9,13 @@ from IoTCommon import CIoTCommon
 from IoTTotalFeature import CIoTTotalFeature
 from IoTSample import CIoTSample
 from SHSample import CSHSample
-from IoTPrompt import CIoTPrompt
-from IoTModel import CIoTModel,get_test_infograph_features
 from SHDataProcess import CSHDataProcess
 from SHFeatureSelect import CSHFeature
 from Config import g_data_root,get_attack_score,g_resolved_columns
 from SHDataEDA import CSHDataDistribution,CSHDataTest
 from SHModelRegression import CSHModelRegression
 from SHModelClassify import CSHModelClassify
-from SHEvaluation import CSHEvaluate,CSHROC,CSHSimilarity
+from SHEvaluation import CSHEvaluate,CSHSimilarity
 from IoTNoise import CIoTNoise
 import warnings
 import numpy as np
@@ -29,7 +28,13 @@ warnings.simplefilter("ignore")
 g_token_root = "%stoken/"%g_data_root
 g_feature_root = "%s/features"%g_data_root
 g_result_root = "%sresult"%g_data_root
-
+'''
+1. 使用COAP和SSPE方法计算频谱
+2. 将频谱做为标签，训练模型
+3. 对模型输出的频谱进行二值化，将流量划分为正常和攻击流量
+4. 分别对比原始的Session、COAP和SSPE方法，提高噪音比例，观察模型的下降
+6. Session方式下降最多，COAP和SSPE差别不大
+'''
 class CClassifyEvaluate:
 
     def __init__(self,attack):
@@ -105,7 +110,13 @@ class CClassifyEvaluate:
         df_result = self.m_model.evaluate(df_noised,x_columns=self.m_col_x,y_column=self.m_col_y)
         df_result['ratio'] = ratio
         return df_result
-
+'''
+1. 使用COAP和SSPE方法计算频谱
+2. 使用频谱做为标签，训练模型
+3. 使用模型生成预测的频谱
+4. 对比不同攻击的攻击频谱的相似度，识别攻击类型
+5. 使用SSPE训练的模型，生成的频谱更稳定，可以有效识别攻击的类型
+'''
 class CRegressionEvaluate:
 
     def __init__(self,attack):
@@ -321,13 +332,10 @@ def show_result(df_result,isClassify):
 
 def main():
     h2o.connect(verbose=False)
-    attack = "Backdoor_attack"
     df_class_result = pd.DataFrame()
     df_regression_result = pd.DataFrame()
     
     for attack in CIoTSample().get_attack_type():
-        print("jim_test",attack)
-
         df_class_label = train_test(attack,'Label')
         if df_class_label.shape[0] > 0:
             df_class_label['attack'] = attack
@@ -354,12 +362,14 @@ def main():
     df_class_result = df_class_result.reset_index(drop=True)
     df_regression_result = df_regression_result.reset_index(drop=True)
 
-    df_class_result.to_csv("./IIoTSet/result/ML-performance/task-6/classify.csv")
-    df_regression_result.to_csv("./IIoTSet/result/ML-performance/task-6/regression.csv")
+    df_class_result[df_class_result['kind']=='sum'].reset_index(drop=True).to_csv("./IIoTSet/result/二分类-COAP.csv")
+    df_class_result[df_class_result['kind']=='score'].reset_index(drop=True).to_csv("./IIoTSet/result/二分类-SSPE.csv")
+
+    df_regression_result.to_csv("./IIoTSet/result/模型输出频谱.csv")
     
-    df_score = pd.read_csv("./IIoTSet/result/ML-performance/task-6/regression.csv",index_col=0)
+    df_score = pd.read_csv("./IIoTSet/result/模型输出频谱.csv",index_col=0)
     df_distance = CIoTAttack(df_score).get_distance(n_sample_count=10)
-    df_distance.to_csv("./IIoTSet/result/ML-performance/task-6/distance.csv")
+    df_distance.to_csv("./IIoTSet/result/相似度.csv")
 
 if __name__ == "__main__":
     main()

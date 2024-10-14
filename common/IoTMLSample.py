@@ -1,3 +1,10 @@
+'''
+1. 数据库初始化（1.将样本保存至数据库。2.随机从传感器流量中采样，生成正常流量，保存至数据库）
+2. 计算攻击分数（1.将没有流量的时间点，填充为正常流量。2.使用滑动窗口计算流量）
+4. ML训练时，只选择7种类型的特征。支持7种类型（int和bool保存为int、category，binary，string, datetime保存为text、float保存为Float）
+5. 生成数据集（packet-label），用于ML训练：单数据包-->标签 (选择7种类型的特征)
+6. 生成数据集（packet-score），用于ML训练：多数据包-->频谱 (选择7种类型的特征，将滑动窗口内的特征进行合并)
+'''
 import os,json,sys,logging
 from numpy import nan
 sys.path.append("./share")
@@ -24,13 +31,6 @@ warnings.simplefilter("ignore")
 pd.set_option('display.float_format', lambda x: '%.4f' % x)
 np.set_printoptions(suppress=True)
 g_sample_root = "%ssample"%g_data_root
-g_prompt_template = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-You are a network security engineer,Your task is to identify abnormal traffic<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-Here is a network traffic information:
-{data}
-Please estimate if it is malicious or benign traffic and output malicious or benign directly.<|eot_id|>
-<|start_header_id|>assistant<|end_header_id|><|end_of_text|>"""
 
 class IoTMLSample:
     def __init__(self,attack):
@@ -66,14 +66,6 @@ class IoTMLSample:
         return df_data;
         
     @staticmethod
-    def select_text_features(df_sample):
-        g_debug_skip_cols = ['time','frame.time_delta','udp.time_delta','normal']
-        g_debug_skip_cols.extend(g_resolved_columns)
-        df_data = df_sample.copy(deep=True)
-        df_data = df_data.drop(g_debug_skip_cols, axis=1,errors='ignore')
-        return df_data;
-        
-    @staticmethod
     def get_packet_text(data):
         text = "{"
         for key, value in data.items():
@@ -87,57 +79,6 @@ class IoTMLSample:
             text += f'"{key}":"{value}",'
         text = text.rstrip(",") + "}"
         return g_prompt_template.format(data=text)
-    
-    @staticmethod
-    def get_window_text(df_window):
-        df_tmp = df_window.drop(g_resolved_columns, axis=1,errors='ignore')
-        #markdown_table = df_tmp.to_markdown(index=False)
-        #return markdown_table
-        df_tmp = df_tmp.reset_index(drop=True)
-        feature_list = df_tmp.keys().tolist()
-        sample_list = []
-        #sample_list.append("|".join(feature_list))
-        for index, row in df_tmp.iterrows():
-            tmp = ""
-            for feature in feature_list:
-                v = row[feature]
-                if v == np.nan or str(v) in ['nan','None']:
-                    continue
-                if type(v) == str:
-                    if v.find("eth:ethertype:") == 0:
-                        v = v.split(":")[-1]
-                    if len(v) > 50:
-                        v = v[0:50]
-                    v = '0' if v == "0.0" else v
-                    v = '1' if v == "1.0" else v
-                    v = v.rstrip(".0") if v.endswith(".0") else v
-                    v = v.rstrip(".00") if v.endswith(".00") else v
-                elif type(v) == bool:
-                    v = 1 if v else 0
-                elif type(v) == float:
-                    v = str(v)
-                    v = '0' if v == "0.0" else v
-                    v = '1' if v == "1.0" else v
-                    v = v.rstrip(".0") if v.endswith(".0") else v
-                    v = v.rstrip(".00") if v.endswith(".00") else v
-                elif type(v) == int:
-                    v = str(v)
-                else:
-                    print("error format",feature,type(v))
-                feature = feature.replace("tcp.completeness.","")
-                feature = feature.replace("tcp.analysis.","")
-                feature = feature.replace("tcp.window_size_value","window_size")
-                #feature = feature.replace("tcp.","")
-                #feature = feature.replace("udp.","")
-                t = "%s=%s,"%(feature,v)
-                tmp = tmp + t
-            tmp = tmp.rstrip(",")
-            if tmp:
-                #tmp = "id=%d,%s<|eot_id|>"%(index, tmp)
-                #tmp = "%s<|eot_id|>"%(tmp)
-                sample_list.append(tmp)
-        text = "\n".join(sample_list)
-        return text
 
     def get_packet_label(self):
         #读取原始数据，防止数据量过大
