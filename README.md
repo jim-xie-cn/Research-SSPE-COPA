@@ -89,8 +89,13 @@ dataset: https://huggingface.co/datasets/JimXie/IIoTset
    
 # Run command in scripts folder
    cd ./scripts
-   sh create_dataset.sh  
-   sh create_sspe_coap.sh
-   sh create_sample.sh
-   sh train_test.sh
+   
+   1. sh create_dataset.sh  
+   
+   2. sh create_sspe_coap.sh
+   
+   3. sh create_sample.sh
+   
+   4. sh train_test.sh
+   
 # Check result with jupyter-notebooks.
