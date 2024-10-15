@@ -14,6 +14,8 @@
 
    https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/dataset.tar.gz
 
+   https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/pcap-json.tar.gz
+
 2. uncompress dataset to IIoTset folder
    
 3. after uncompressing, the struct of IIoTset folder should like below:
