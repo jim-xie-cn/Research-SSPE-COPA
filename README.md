@@ -22,19 +22,59 @@
 
        |-raw
 
-       |-dataset
+          |-Attack traffic
+
+          |-Normal traffic
+
+          |-Selected dataset for ML and DL
 
        |-features
+          
+          |-features.xlsx
+
+          |-sample-features.xlsx
+
+          |-total_base_features.csv
+   
+       |-dataset
+
+          |-Attack
+
+          |-Normal 
 
        |-pcap-json
+   
+          |-Attack
 
-       |-dataset
+          |-Normal 
 
        |-sample
 
+          |-packet-score
+
        |-result
+          |-attack-importance.csv
+   
+          |-binary-classification-COAP.csv
+   
+          |-attack-performance.csv
+                                          
+          |-binary-classification-SSPE.csv
+   
+          |-attack-spectrums.csv
+                                    
+          |-distance.csv
+   
+          |-binary-classification-4-features.csv
+                             
+          |-binary-classification-46-features-without-normalization.csv
+      
+          |-spectrums-distribution.csv
+   
+          |-binary-classification-46-features.csv
 
        |-mysql
+          |-iot.sql
 
 # import data to mysql
     mysql -hlocalhost -uroot -piot_admin iot < ./mysql/iot.sql
