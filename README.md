@@ -1,3 +1,4 @@
+#Source code for paper and dataset https://huggingface.co/datasets/JimXie/IIoTset 
 # Development environment prepare
 1. setup python packages of ./install/requirements.txt
 2. setup mysql，grant root access permission（user name is root，password is iot_admin)
