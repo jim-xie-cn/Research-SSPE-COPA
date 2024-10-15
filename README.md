@@ -88,14 +88,14 @@ dataset: https://huggingface.co/datasets/JimXie/IIoTset
     mysql -hlocalhost -uroot -piot_admin iot < ./mysql/iot.sql
    
 # Run command in scripts folder
-   cd ./scripts
+   1. cd ./scripts
    
-   1. sh create_dataset.sh  
+   2. sh create_dataset.sh  
    
-   2. sh create_sspe_coap.sh
+   3. sh create_sspe_coap.sh
    
-   3. sh create_sample.sh
+   4. sh create_sample.sh
    
-   4. sh train_test.sh
+   5. sh train_test.sh
    
 # Check result with jupyter-notebooks.
