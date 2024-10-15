@@ -1,4 +1,7 @@
-# Source code for paper and dataset https://huggingface.co/datasets/JimXie/IIoTset 
+# Source code for paper and dataset 
+
+paper:
+dataset: https://huggingface.co/datasets/JimXie/IIoTset 
 
 # Development environment prepare
 1. setup python packages of ./install/requirements.txt
