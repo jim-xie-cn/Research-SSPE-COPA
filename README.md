@@ -22,3 +22,10 @@
 # import data to mysql
     mysql -hlocalhost -uroot -piot_admin iot < ./mysql/iot.sql
    
+# Run command in scripts folder
+   cd ./scripts
+   sh create_dataset.sh  
+   sh create_sspe_coap.sh
+   sh create_sample.sh
+   sh train_test.sh
+# Check result with jupyter-notebooks.
