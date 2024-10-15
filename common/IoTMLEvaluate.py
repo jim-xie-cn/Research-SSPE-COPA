@@ -365,11 +365,11 @@ def main():
     df_class_result[df_class_result['kind']=='sum'].reset_index(drop=True).to_csv("./IIoTSet/result/二分类-COAP.csv")
     df_class_result[df_class_result['kind']=='score'].reset_index(drop=True).to_csv("./IIoTSet/result/二分类-SSPE.csv")
 
-    df_regression_result.to_csv("./IIoTSet/result/模型输出频谱.csv")
+    df_regression_result.to_csv("./IIoTSet/result/attack-spectrums.csv")
     
-    df_score = pd.read_csv("./IIoTSet/result/模型输出频谱.csv",index_col=0)
+    df_score = pd.read_csv("./IIoTSet/result/attack-spectrums.csv",index_col=0)
     df_distance = CIoTAttack(df_score).get_distance(n_sample_count=10)
-    df_distance.to_csv("./IIoTSet/result/相似度.csv")
+    df_distance.to_csv("./IIoTSet/result/distance.csv")
 
 if __name__ == "__main__":
     main()
