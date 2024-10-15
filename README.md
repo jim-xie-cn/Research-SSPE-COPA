@@ -11,11 +11,14 @@
 3. uncompress dataset to IIoTset folder
    after uncompressing, the struct of IIoTset folder should like below:
    IIoTset
+       |-raw
        |-dataset
        |-features
        |-pcap-json
        |-dataset
-       |-raw
        |-sample
        |-result
+       |-mysql
+# import data to mysql
+    mysql -hlocalhost -uroot -piot_admin iot < ./mysql/iot.sql
    
