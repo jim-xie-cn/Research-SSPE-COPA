@@ -19,6 +19,7 @@
 3. after uncompressing, the struct of IIoTset folder should like below:
 
    IIoTset
+   
        |-raw
 
           |-Attack traffic
@@ -73,6 +74,7 @@
           |-binary-classification-46-features.csv
 
        |-mysql
+   
           |-iot.sql
 
 # import data to mysql
