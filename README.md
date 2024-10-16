@@ -11,15 +11,15 @@ dataset: https://huggingface.co/datasets/JimXie/IIoTset
 
    https://ieee-dataport.org/documents/edge-iiotset-new-comprehensive-realistic-cyber-security-dataset-iot-and-iiot-applications
 
-   https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/features.tar.gz
+   https://huggingface.co/datasets/JimXie/IIoTset/blob/main/features.tar.gz
 
-   https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/mysql.tar.gz
+   https://huggingface.co/datasets/JimXie/IIoTset/blob/main/mysql.tar.gz
 
-   https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/sample.tar.gz
+   https://huggingface.co/datasets/JimXie/IIoTset/blob/main/sample.tar.gz
 
-   https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/dataset.tar.gz
+   https://huggingface.co/datasets/JimXie/IIoTset/blob/main/dataset.tar.gz
 
-   https://huggingface.co/datasets/JimXie/IIoTset/resolve/main/pcap-json.tar.gz
+   https://huggingface.co/datasets/JimXie/IIoTset/blob/main/pcap-json.tar.gz
 
 2. uncompress dataset to IIoTset folder
    
